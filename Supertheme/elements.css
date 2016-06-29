@@ -1,0 +1,534 @@
+/* Vars ----------------------------------------------------*//* Mixins ----------------------------------------------------*/
+.block-divider {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+/* DROPCAP ------------------------------------------------------------*/
+.dropcap:first-letter {
+  font-size: 3.571em;
+  line-height: 0.76em;
+  padding: 0.2em 0.2em 0 0;
+  float: left;
+  display: block;
+  color: #444444;
+}
+.dropcap.dark:first-letter {
+  display: block;
+  float: left;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 8px 0 0;
+  padding: 10px 10px;
+  background: #606060;
+  color: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* LISTS ------------------------------------------------------------*/
+.lists-check ul,
+.lists-arrow ul,
+.lists-plus ul,
+.lists-star ul,
+.lists-heart ul {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  padding-left: 25px;
+}
+.lists-check ul li {
+  list-style: outside;
+  padding-left: 8px;
+  list-style-image: url(../img/ic_check_li_style.png);
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.lists-arrow ul {
+  list-style-image: url(../img/bullets/arrow.png);
+  line-height: 1.5em;
+  font-size: 18px;
+  margin-left: 0px;
+}
+.lists-plus ul {
+  list-style-image: url(../img/bullets/plus.png);
+  line-height: 1.5em;
+}
+.lists-star ul {
+  list-style-image: url(../img/bullets/star.png);
+  line-height: 1.5em;
+}
+.lists-heart ul {
+  list-style-image: url(../img/bullets/heart.png);
+  line-height: 1.5em;
+}
+
+.lists-check ul li:last-child, .lists-arrow ul li:last-child, .lists-plus ul li:last-child, .lists-star ul li:last-child, .lists-heart ul li:last-child {
+  margin-bottom: 0px;
+}
+/* PULLQUOTES ------------------------------------------------------------*/
+.pullquote-right,
+.pullquote-left {
+  border-left: #555555 2px solid;
+  float: right;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 20px 0px 20px 20px;
+  width: 33%;
+  font-style: italic;
+}
+.pullquote-left {
+  float: left;
+  margin: 20px 20px 20px 0px;
+  padding: 0 0 0 20px;
+}
+.pullquote-right {
+  border-left: none;
+  border-right: #555555 2px solid;
+  padding: 0 20px 0 0px;
+}
+/* HIGHLIGHT ------------------------------------------------------------*/
+.highlight {
+  background: #fbe471;
+}
+/* Link buttons ------------------------------------------------*/
+.theme-link-button {
+  display: inline-block;
+  padding: 10px;
+  background: #f15b93;
+  color: #f1d76e;
+}
+.link-button {
+  display: inline-block;
+  background-color: #f15b93;
+  border: 1px solid #c46500;
+  color: #703a00;
+  font-weight: bold;
+  line-height: 1;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+  -ms-border-radius:3px;
+  margin-top:4px;
+  cursor:pointer;
+}
+.link-button:hover {
+  color: #703a00;
+  background-color: #ff9627;
+}
+.link-button.fullwidth {
+  display: block;
+  width: 97%;
+  margin: 0 auto;
+}
+.list-buttons {
+  display: block;
+}
+.list-buttons li {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+/* Link buttons grey ------------------------------------------------*/
+
+.link-button.grey {
+  color: #c6c6c6;
+  background-color: #383838;
+  border: 1px solid #2b2b2b;
+  text-shadow: 1px 1px 1px #212121;
+}
+.link-button.grey:hover {
+  color: #FFFFFF;
+  background-color: #26c941;
+  text-shadow:#04aa1f;
+  text-shadow: 1px 1px 1px #04aa1f;
+}
+
+/* Link buttons green ------------------------------------------------*/
+.link-button.green {
+  color: #FFFFFF;
+  background-color: #05bc23;
+  border: 1px solid #018d18;
+  text-shadow: 1px 1px 1px #04aa1f;
+}
+.link-button.green:hover {
+  color: #FFFFFF;
+  background-color: #26c941;
+  text-shadow:#04aa1f;
+  text-shadow: 1px 1px 1px #04aa1f;
+}
+/* Link buttons blue ------------------------------------------------*/
+.link-button.blue {
+  color: #2c4358;
+  background-color: #97b2c9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#97b2c9), to(#4e7da5));
+  /* Saf4+, Chrome */
+
+  background-image: -webkit-linear-gradient(top, #97b2c9, #4e7da5);
+  background-image: -moz-linear-gradient(top, #97b2c9, #4e7da5);
+  background-image: -ms-linear-gradient(top, #97b2c9, #4e7da5);
+  background-image: -o-linear-gradient(top, #97b2c9, #4e7da5);
+  background-image: linear-gradient(top, #97b2c9, #4e7da5);
+  border: 1px solid #b9d3e9;
+  border-bottom: 1px solid #2c4358;
+  -webkit-box-shadow: inset 0 1px 0 0 #b9d3e9;
+  -moz-box-shadow: inset 0 1px 0 0 #b9d3e9;
+  -ms-box-shadow: inset 0 1px 0 0 #b9d3e9;
+  -o-box-shadow: inset 0 1px 0 0 #b9d3e9;
+  box-shadow: inset 0 1px 0 0 #b9d3e9;
+}
+.link-button.blue:hover {
+  color: #2c4358;
+  background-color: #89cc54;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#89bde8), to(#3771a2));
+  /* Saf4+, Chrome */
+
+  background-image: -webkit-linear-gradient(top, #89bde8, #3771a2);
+  background-image: -moz-linear-gradient(top, #89bde8, #3771a2);
+  background-image: -ms-linear-gradient(top, #89bde8, #3771a2);
+  background-image: -o-linear-gradient(top, #89bde8, #3771a2);
+  background-image: linear-gradient(top, #89bde8, #3771a2);
+}
+/* ACCORDION -------------------------------------------------*/
+.accordion-trigger {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #f8f5f2;
+}
+.accordion-trigger.active {
+  border-bottom: 1px solid #ccc;
+}
+.accordion-trigger:hover {
+  background: #f8f5f2;
+}
+.accordion-container {
+  margin-bottom: 0px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+/* TOGGLE -------------------------------------------------*/
+.toggle-trigger {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 12px 25px;
+  cursor: pointer;
+  background: #555454 url(../img/icon-toggle-plus.png) no-repeat 95% 17px;
+  text-transform:uppercase;
+  font-size:18px;
+  margin-bottom:8px;
+}
+.toggle-trigger.active {
+  border-bottom: 1px solid #ccc;
+  background: #555454 url(../img/icon-toggle-less.png) no-repeat 95% 17px
+}
+
+.toggle-container {
+  margin-bottom: 0px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin-top:-9px;
+}
+/* TABS -------------------------------------------------*/
+/* root element for tabs  */
+.tabs {
+  list-style: none;
+  margin: 0 !important;
+  padding: 0px;
+  height: 41px;
+  border-top:1px solid #555454;
+  border-left:1px solid #555454;
+  border-right:1px solid #555454;
+}
+/*body.home .tabs {
+  padding: 0px 30px;
+}*/
+/* single tab */
+ul.tabs li {
+  display: block;
+  float: left;
+  text-indent: 0;
+  padding: 0;
+  list-style-image: none !important;
+  
+}
+/* link inside the tab. uses a background image */
+ul.tabs a {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  height: 41px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 0px 0px 10px;
+  position: relative;
+  top: 0px;
+}
+ul.tabs a span {
+	display: block;
+	height: 100%;
+	/* padding-right: 10px; */
+}
+ul.tabs a {
+  text-decoration: none;
+  color: #555454;
+  padding: 5px 25%;
+}
+ul.tabs a:active {
+  outline: none;
+}
+/* when mouse enters the tab move the background image */
+ul.tabs li:hover a,
+ul.tabs a.current {
+  background: #fff;
+  color: #555454;
+  /*border-bottom: 1px solid #05bc23;*/
+}
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	cursor: default !important;
+	color: #555454 !important;
+	display: block;
+	text-decoration: none;
+	/*border-bottom: 1px solid #05bc23;*/
+	background: #dfdfdf;
+	padding: 5px 25%;
+}
+/* initially all panes are hidden */.panes .pane {
+  display: none;
+}
+.panes > div {
+  display: none;
+  min-height:200px;
+  border: 1px solid #555454;
+  padding: 15px;
+  background: #fff;
+}
+
+.panes > div > div {
+  display: block;
+ 
+  background: #fff;
+}
+
+/* TABS IN WIDGET-------------------------------------------------*/
+.news-widget ul.tabs a {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 0px 0px 10px;
+  position: relative;
+  top: 0px;
+}
+
+.news-widget ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	cursor: default !important;
+	color: #555454 !important;
+	display: block;
+	text-decoration: none;
+	
+	background: #dfdfdf;
+	padding: 5px 8%;
+    display: inline-block;
+    height: 40px;
+    line-height: 43px;
+    padding: 0 8%
+}
+
+.news-widget ul.tabs a {
+  text-decoration: none;
+  color: #555454;
+    padding: 5px 8%;
+}
+
+.news-widget .panes > div {
+  display: none;
+  min-height:60px;
+  border: 1px solid #555454;
+  padding: 15px;
+  background: #fff;
+}
+
+
+/* progress bar */
+
+.progress-bar-bg{
+	width: 98%;
+	height: 20px;
+	margin: 13px auto;
+	display: block;
+	border: none;
+	color:#FFFFFF;
+	background: #dfdfdf;
+}
+
+.progress-bar{
+	height:100%;
+	border-radius:0px 10px 10px 0px;
+}
+.progress-bar-php{
+	width:85%;
+	background: #555454 url(../img/progress-bar-range-php.png) no-repeat right;
+}
+.progress-bar-html{
+	width:92%;
+	background: #555454 url(../img/progress-bar-range-html.png) no-repeat right;
+}
+
+.progress-bar-css{
+	width:90%;
+	background: #555454 url(../img/progress-bar-range-css.png) no-repeat right;
+}
+.progress-bar-java-script{
+	width:75%;
+	background: #555454 url(../img/progress-bar-range-java-script.png) no-repeat right;
+}
+.progress-bar-seo{
+	width:70%;
+	background: #555454 url(../img/progress-bar-range-seo.png) no-repeat right;
+}
+
+.progress-bar-text {
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: absolute;
+	left: 30px;
+	font-weight: 400;
+}
+
+/* progress {
+	width: 385px;
+	height: 20px;
+	margin: 10px auto;
+	display: block;
+	Important Thing
+	-webkit-appearance: none;
+	border: none;
+	color:#FFFFFF;
+
+}
+
+
+All good till now. Now we'll style the background
+progress::-webkit-progress-bar {
+	background: #dfdfdf;
+}
+
+Now the value part
+progress::-webkit-progress-value {
+	background:#555454;
+
+progress::-moz-progress-value {
+	background:#555454;
+
+progress::-mos-progress-value {
+	background:#555454;
+
+
+	Looks great, now animating it
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+}
+
+@-webkit-keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+ */
+ 
+/* START PORTFOLIO PAGE IMAGE HOVER EFFECT */
+.portfolio-img{
+	overflow: hidden;
+	text-align: center;
+	cursor: default;
+	max-height: 200px;
+}
+
+.portfolio-img .portfolio-img-hover-panel{
+   opacity: 0;
+   overflow:visible;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.7);
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.portfolio-img-hover-buttons-panel a{	
+   display: inline-block;
+   text-decoration: none;
+   width:34px;
+   height:34px;	
+   position:relative;
+   opacity: 0;
+   -webkit-transition: opacity 0.5s 0s ease-in-out;
+   -moz-transition: opacity 0.5s 0s ease-in-out;
+   -o-transition: opacity 0.5s 0s ease-in-out;
+   -ms-transition: opacity 0.5s 0s ease-in-out;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+
+.portfolio-img-hover-buttons-panel a:first-child{
+	margin-right: 16px;
+}
+
+.portfolio-img:hover .portfolio-img-hover-panel{
+   opacity: 1;
+   background: rgba(0,0,0,0.7);
+}
+.portfolio-img:hover a {
+	opacity:1;
+	-moz-transition-delay: 0.3s;
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.portfolio-img-hover-buttons-panel{
+	position: absolute;
+	width: 88px;
+	height: 34px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+/* END PORTFOLIO PAGE IMAGE HOVER EFFECT */
+
+@media only screen and (max-width: 768px) {
+	.from-the-blog .panes .one-third{
+		float:none;
+	}
+ }

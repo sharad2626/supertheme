@@ -1,0 +1,90 @@
+/*This CSS for  Theme options */
+	#general_setting_frm
+	{
+			width: 70%;
+			margin-left: 30%;
+
+
+	}
+#generalsetting
+{
+	background-image: url("../img/general_settings.png");
+}
+
+#favIconOptions label , #logoOptions label, #frmsocial label, #frmslider label, #frmportfolio label, #frmwoo_com label {
+    font-size: 14px;
+    font-weight: bold;
+}
+.logo_option
+{	
+	 color: #9d9d9d;
+}
+#logoOptions tr {
+    height: 80px;
+}
+#frmsocial tr {
+    height: 80px;
+}
+#google_ad_div
+{
+	height: 300px;
+}
+#portfolio_div
+{
+	height: 340px;
+}
+#slider_div
+{
+	height : 380px;
+}
+#success_msg
+{
+	background-color: #fff;
+    border-left: 4px solid #7ad03a;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 9px 12px;
+    width: 90%;
+}
+/*This css for main nav menu primary */
+
+.menu {
+    display: inline-block;
+    float: right;
+    width: 500px;
+}
+
+.menu li {
+    display: inline-block;
+    float: left;
+    margin-left: 0 !important;
+    padding: 18px;
+}
+
+  .demo {
+            width: 980px;
+            margin: 0px auto;
+        }
+        .demo h1 {
+                margin:33px 0 25px;
+            }
+        .demo h3 {
+                margin: 10px 0;
+            }
+        pre {
+            background: #fff;
+        }
+        @media only screen and (max-width: 780px) {
+        .demo {
+                margin: 5%;
+                width: 90%;
+         }
+        .how-use {
+                float: left;
+                width: 300px;
+                display: none;
+            }
+        }
+        #tabInfo {
+            display: none;
+        }
